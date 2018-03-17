@@ -1,0 +1,26 @@
+@mixin transform($transforms) {
+    -moz-transform: $transforms;
+      -o-transform: $transforms;
+     -ms-transform: $transforms;
+  -webkit-transform: $transforms;
+         transform: $transforms;
+  }
+  
+@mixin transition($property, $duration, $easing: ease) {
+	transition: $property $duration $easing;
+	-webkit-transition: $property $duration $easing;
+	-moz-transition: $property $duration $easing;
+}
+
+.menu__item--zoom {
+  position: relative;
+  overflow: hidden;
+}
+
+.menu__item--zoom:hover .menu__button {
+  @include transform(scale(1.1));
+}
+
+.menu__item--zoom .menu__button {
+  @include transition(all, 0.3s);
+}
