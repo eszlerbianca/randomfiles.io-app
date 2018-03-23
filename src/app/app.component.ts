@@ -13,12 +13,4 @@ fontawesome.library.add(faFilePdf, faQuestionCircle, faLinkedin, faGithub);
 })
 export class AppComponent {
   title = 'Generate random files';
-
-  onMouseOver(event: any) {
-
-    const x = event.pageX - event.target.offsetLeft;
-    const y = event.pageY - event.target.offsetTop;
-    event.target.style.setProperty('--x', x + 'px');
-    event.target.style.setProperty('--y', y + 'px');
-  }
 }

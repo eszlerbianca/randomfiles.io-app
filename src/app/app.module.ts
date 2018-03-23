@@ -1,7 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { Http, HttpModule, Response, RequestOptions, Headers } from '@angular/http';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
@@ -9,7 +10,6 @@ import { HomeComponent } from './home/home.component';
 import { PdfService } from './services/pdf.service';
 
 const routes: Routes = [
-  // {path: '', redirectTo: '', pathMatch: 'full'},
   { path: '', component: HomeComponent },
   { path: '**', redirectTo: '', component: HomeComponent }
 ];
@@ -21,7 +21,8 @@ const routes: Routes = [
   ],
   imports: [
     BrowserModule,
-    HttpModule,
+    HttpClientModule,
+    FormsModule,
     RouterModule.forRoot(routes)
   ],
   providers: [
