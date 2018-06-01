@@ -18,6 +18,10 @@
   border-radius: .25rem;
 }
 
+.menu__description {
+  font-size: 1.1rem;
+}
+
 .menu__button--zoom:hover {
   @include transform(scale(1.1));
 }

@@ -7,7 +7,9 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 
+
 import { PdfService } from './services/pdf.service';
+import { HomeMenuItemComponent } from './home/home-menu-item/home-menu-item.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -17,7 +19,8 @@ const routes: Routes = [
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent
+    HomeComponent,
+    HomeMenuItemComponent,
   ],
   imports: [
     BrowserModule,

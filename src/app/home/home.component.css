@@ -1,10 +1,10 @@
 .menu__icon {
-    margin-top: 50px;
-    margin-bottom: 15px;
+    margin-top: 3.12rem;
+    margin-bottom: 1rem;
 }
 
 .menu__button {
-    padding-bottom: 20px;
+    padding-bottom: 1.25rem;
     width: 100%;
 }
 
