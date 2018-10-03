@@ -8,7 +8,7 @@ export class PdfService {
     constructor(private http: HttpClient) { }
 
     generatePdf() {
-        const url = 'http://heroku.randomfiles.io/api/rest/v1/pdf';
+        const url = 'https://immense-savannah-60950.herokuapp.com/api/rest/v1/pdf';
 
         this.http.get(url, {
             responseType: 'blob'
