@@ -1,4 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
+html {
+    font-size: 100%;
+}
+
 .body--color {
     color: #ffffff;
 }
@@ -8,7 +12,7 @@
 }
 
 .page-header {
-    padding-bottom: 9px;
-    margin: 40px 0 20px;
+    padding-bottom: .5rem;
+    margin: 2.5rem 0;
     border-bottom: 1px solid #eee;
 }

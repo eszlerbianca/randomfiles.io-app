@@ -12,15 +12,20 @@
 	-moz-transition: $property $duration $easing;
 }
 
-.menu__item--zoom {
+.menu__item {
   position: relative;
   overflow: hidden;
+  border-radius: .25rem;
 }
 
-.menu__item--zoom:hover .menu__button {
+.menu__description {
+  font-size: 1.1rem;
+}
+
+.menu__button--zoom:hover {
   @include transform(scale(1.1));
 }
 
-.menu__item--zoom .menu__button {
+.menu__button--zoom {
   @include transition(all, 0.3s);
 }
